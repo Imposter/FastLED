@@ -1,7 +1,9 @@
 #ifndef __INC_LED_SYSDEFS_ARM_SAM_H
 #define __INC_LED_SYSDEFS_ARM_SAM_H
 
-#include <application.h>
+#ifndef __STM32_NO_INCLUDE_APPLICATION_H
+  #include <application.h>
+#endif
 
 #if defined(STM32F10X_MD)
 
